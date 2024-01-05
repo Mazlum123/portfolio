@@ -1,0 +1,41 @@
+$cercle-diametre: 300px;
+
+.cercle-noir {
+    background-color: #000;
+    border-radius: 50%;
+    width: $cercle-diametre;
+    height: $cercle-diametre;
+    position: relative;
+    margin: 20px auto;
+
+    .cercle-rouge, .cercle-bleu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    .cercle-rouge {
+        background-color: red;
+        width: 80%;
+        height: 80%;
+    }
+
+    .cercle-bleu {
+        background-color: blue;
+        width: 60%;
+        height: 60%;
+    }
+
+    .cercle-milieu {
+        background-color: grey;
+        border-radius: 50%;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
